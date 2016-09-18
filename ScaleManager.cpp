@@ -50,6 +50,10 @@ float ScaleManager::getScaleNoteFreq(int NOTENUMBER) {
   //returns the note frequency as a float
 }
 
+String ScaleManager::getScaleNoteName(int INDEX) {
+  return String(noteNames[getScaleNote(INDEX) % 12]) + String(getScaleNote(INDEX)/12);
+}
+
 void ScaleManager::loadDefaultScales() {
   //just chromatic, major and minor for now
   //CHROMATIC

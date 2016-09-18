@@ -10,12 +10,18 @@ void setup() {
   scalemanager.setScale(MAJOR); //sets the currently used scale to Major
   scalemanager.setFundamental(60); //sets the fundamental to middle C (this is already the default, but included for clarity)
 
-  Serial.println(scalemanager.getFundamentalName() + scalemanager.getScaleName());
-  for (int i = 0; i < 13; i++) {
+  Serial.println(scalemanager.getFundamentalName() + " " + scalemanager.getScaleName());
+  Serial.println("Midi notes:");
+
+  for (int i = 0; i < 8; i++) {
     Serial.print(scalemanager.getScaleNote(i));
     Serial.print("\t");
   }
-
+  Serial.println();
+  for (int i = 0; i < 8; i++) {
+    Serial.print(scalemanager.getScaleNoteName(i));
+    Serial.print("\t");
+  }
 }
 
 void loop() {
