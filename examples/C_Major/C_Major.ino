@@ -8,7 +8,7 @@ void setup() {
 
   scalemanager.init();  //loads three default scales (Chromatic, Major, Minor) into scalemanager
   scalemanager.setScale(MAJOR); //sets the currently used scale to Major
-  scalemanager.setFundamental(60); //sets the fundamental to middle C (this is already the default, but included for clarity)
+  scalemanager.setFundamental(60); //sets the fundamental to C5 (this is already the default, but included for clarity)
 
   Serial.println(scalemanager.getFundamentalName() + " " + scalemanager.getScaleName());
   Serial.println("Midi notes:");
