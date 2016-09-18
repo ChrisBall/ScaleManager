@@ -13,6 +13,10 @@
 #include "Arduino.h"
 #include "Scale.h"
 
+#define CHROMATIC 0
+#define MAJOR 1
+#define MINOR 2
+
 class ScaleManager {
     
   public:
