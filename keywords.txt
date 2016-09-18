@@ -1,12 +1,16 @@
-ScaleManager	KEYWORD1
-Scale	KEYWORD1
-init	KEYWORD2
-setFundamental	KEYWORD2
-addScale	KEYWORD2
-setScale	KEYWORD2
+ScaleManager		KEYWORD1
+Scale				KEYWORD1
+init				KEYWORD2
+setFundamental		KEYWORD2
+addScale			KEYWORD2
+setScale			KEYWORD2
 getFundamentalName	KEYWORD2
-getScaleName	KEYWORD2
-getScaleNote	KEYWORD2
+getScaleName		KEYWORD2
+getScaleNote		KEYWORD2
 getScaleNoteFreq	KEYWORD2
 getScaleNotePeriod	KEYWORD2
 getScaleNoteName	KEYWORD2
+
+CHROMATIC 			LITERAL1
+MAJOR 				LITERAL1
+MINOR 				LITERAL1
